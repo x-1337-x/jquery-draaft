@@ -1,6 +1,57 @@
-.font-test {
-  font-family: 'MyriadPro';
-  color: #000;
-  font-size: 24px;
-  font-style: italic;
+.l-header {
+  width: 100%;
+  background-color: #fff;
+  line-height: 55px;
+  vertical-align: middle;
+}
+
+.l-header-logo {
+  float: left;
+  padding-top: 13px;
+  
+  a {
+    display: block;
+  }
+}
+
+.l-header-navbar {
+  float: left;
+  padding-left: 45px; 
+}
+
+.l-header-navbar-item {
+  display: inline-block;
+  padding: 20px 25px;
+
+  &:hover {
+    background-color: #e2e2e2;
+
+    a {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    font-family: 'MyriadProCondensed';
+    display: block;
+    color: #7ea001;
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px dotted #7ea001;
+  }
+}
+
+.l-header-contact {
+  float: right;
+
+  span {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    font-family: 'MyriadProCondensed';
+    font-size: 24px;
+    color: #464646;
+  }
 }

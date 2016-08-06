@@ -104,13 +104,13 @@ The `sprites` mixin generates identical output to the CSS template
   width: 16px;
   height: 17px; }
 
-.icon-Sklad.com-logo-menu {
+.icon-Sklad-logo-menu {
   background-image: url(../i/sprite.png);
   background-position: 0px -112px;
   width: 150px;
   height: 29px; }
 
-.icon-Sklad.com-logo {
+.icon-Sklad-logo {
   background-image: url(../i/sprite.png);
   background-position: 0px 0px;
   width: 387px;
@@ -300,7 +300,7 @@ body {
   font: normal 16px/1.4 MyriadPro, Arial, sans-serif; }
 
 .wrapper {
-  max-width: 980px;
+  max-width: 1000px;
   margin: auto; }
 
 .icon {
@@ -334,8 +334,43 @@ a {
 .pull-right {
   float: right !important; }
 
-.font-test {
-  font-family: 'MyriadPro';
-  color: #000;
-  font-size: 24px;
-  font-style: italic; }
+.l-header {
+  width: 100%;
+  background-color: #fff;
+  line-height: 55px;
+  vertical-align: middle; }
+
+.l-header-logo {
+  float: left;
+  padding-top: 13px; }
+  .l-header-logo a {
+    display: block; }
+
+.l-header-navbar {
+  float: left;
+  padding-left: 45px; }
+
+.l-header-navbar-item {
+  display: inline-block;
+  padding: 20px 25px; }
+  .l-header-navbar-item:hover {
+    background-color: #e2e2e2; }
+    .l-header-navbar-item:hover a {
+      border-bottom: none; }
+  .l-header-navbar-item a {
+    font-family: 'MyriadProCondensed';
+    display: block;
+    color: #7ea001;
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px dotted #7ea001; }
+
+.l-header-contact {
+  float: right; }
+  .l-header-contact span {
+    display: inline-block; }
+  .l-header-contact a {
+    display: inline-block;
+    font-family: 'MyriadProCondensed';
+    font-size: 24px;
+    color: #464646; }
