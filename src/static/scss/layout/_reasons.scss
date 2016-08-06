@@ -1,0 +1,55 @@
+.l-reasons {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.l-reasons-header {
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 62px;
+  color: #464646;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::first-letter {
+    font-size: 72px;
+  }
+}
+
+.l-reasons-list {
+  padding: 0 10px;
+}
+
+.l-reasons-list-item {
+  display: block;
+  padding: 25px 0; 
+  @extend .clearfix;
+
+  p {
+    margin-left: 80px;
+    padding-top: 10px;
+    font-family: 'Arial';
+    font-size: 17px;
+    color: #7f7f7f;
+
+    strong {
+      color: #464646;
+    }
+  }
+}
+
+.c-reasons-list-pic {
+  float: left;
+  height: 65px;
+  position: relative;
+}
+
+.c-reasons-text__emph {
+  font-size: 20px;
+  color: #92b900;
+  line-height: 1;
+}
+
+.l-reasons-button {
+  text-align: center;
+}

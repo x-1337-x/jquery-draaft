@@ -7,10 +7,14 @@
 
 .l-header-logo {
   float: left;
-  padding-top: 13px;
+  line-height: 60px;
   
   a {
     display: block;
+  }
+
+  span {
+    vertical-align: middle;
   }
 }
 

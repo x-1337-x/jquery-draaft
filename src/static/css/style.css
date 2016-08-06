@@ -309,12 +309,13 @@ body {
 a {
   text-decoration: none; }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .l-reasons-list-item:before,
+.clearfix:after,
+.l-reasons-list-item:after {
   content: "";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, .l-reasons-list-item:after {
   clear: both; }
 
 .truncate {
@@ -334,6 +335,29 @@ a {
 .pull-right {
   float: right !important; }
 
+.c-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 30px 35px;
+  background-color: #f00;
+  font-family: 'MyriadProCondensed';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  line-height: 0;
+  border-radius: 3px;
+  border-bottom: 2px solid #a70101; }
+
+.c-section-footer {
+  width: 100%;
+  padding: 10px 35px;
+  background-color: #718d02;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 16px;
+  color: #fff; }
+
 .l-header {
   width: 100%;
   background-color: #fff;
@@ -342,9 +366,11 @@ a {
 
 .l-header-logo {
   float: left;
-  padding-top: 13px; }
+  line-height: 60px; }
   .l-header-logo a {
     display: block; }
+  .l-header-logo span {
+    vertical-align: middle; }
 
 .l-header-navbar {
   float: left;
@@ -455,9 +481,70 @@ a {
   width: 45%;
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid transparent;
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 15px; }
 
 .l-hero-form p {
   font-family: 'Arial';
   font-size: 17px;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 15px; }
+
+.l-hero-form input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: none; }
+
+.l-hero-form input::-webkit-input-placeholder {
+  font-family: 'MyriadPro';
+  font-size: 17px;
+  color: #7f7f7f; }
+
+.l-hero-form-button {
+  display: block;
+  width: 100%; }
+
+.l-reasons {
+  width: 100%;
+  padding-bottom: 50px; }
+
+.l-reasons-header {
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 62px;
+  color: #464646;
+  text-transform: uppercase;
+  text-align: center; }
+  .l-reasons-header::first-letter {
+    font-size: 72px; }
+
+.l-reasons-list {
+  padding: 0 10px; }
+
+.l-reasons-list-item {
+  display: block;
+  padding: 25px 0; }
+  .l-reasons-list-item p {
+    margin-left: 80px;
+    padding-top: 10px;
+    font-family: 'Arial';
+    font-size: 17px;
+    color: #7f7f7f; }
+    .l-reasons-list-item p strong {
+      color: #464646; }
+
+.c-reasons-list-pic {
+  float: left;
+  height: 65px;
+  position: relative; }
+
+.c-reasons-text__emph {
+  font-size: 20px;
+  color: #92b900;
+  line-height: 1; }
+
+.l-reasons-button {
+  text-align: center; }
