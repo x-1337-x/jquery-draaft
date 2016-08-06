@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-It.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-Semibold.otf") format("opentype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-SemiboldIt.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-Bold.otf") format("opentype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-BoldIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-Cond.otf") format("opentype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-CondIt.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-BoldCond.otf") format("opentype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-BoldCondIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.icon-Phone {
+  background-image: url(../i/sprite.png);
+  background-position: -176px -112px;
+  width: 16px;
+  height: 17px; }
+
+.icon-Sklad.com-logo-menu {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -112px;
+  width: 150px;
+  height: 29px; }
+
+.icon-Sklad.com-logo {
+  background-image: url(../i/sprite.png);
+  background-position: 0px 0px;
+  width: 387px;
+  height: 112px; }
+
+.icon-arrow-1 {
+  background-image: url(../i/sprite.png);
+  background-position: -351px -191px;
+  width: 33px;
+  height: 31px; }
+
+.icon-arrow-slide-active {
+  background-image: url(../i/sprite.png);
+  background-position: -291px -191px;
+  width: 30px;
+  height: 44px; }
+
+.icon-arrow-slide-static {
+  background-image: url(../i/sprite.png);
+  background-position: -321px -191px;
+  width: 30px;
+  height: 44px; }
+
+.icon-arrow {
+  background-image: url(../i/sprite.png);
+  background-position: -364px -161px;
+  width: 20px;
+  height: 20px; }
+
+.icon-banknote {
+  background-image: url(../i/sprite.png);
+  background-position: -101px -191px;
+  width: 50px;
+  height: 50px; }
+
+.icon-champion {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -241px;
+  width: 47px;
+  height: 51px; }
+
+.icon-check-1 {
+  background-image: url(../i/sprite.png);
+  background-position: -150px -112px;
+  width: 26px;
+  height: 19px; }
+
+.icon-check {
+  background-image: url(../i/sprite.png);
+  background-position: -90px -241px;
+  width: 41px;
+  height: 31px; }
+
+.icon-close {
+  background-image: url(../i/sprite.png);
+  background-position: -151px -191px;
+  width: 50px;
+  height: 50px; }
+
+.icon-computer-1 {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -141px;
+  width: 72px;
+  height: 50px; }
+
+.icon-computer {
+  background-image: url(../i/sprite.png);
+  background-position: -307px -141px;
+  width: 57px;
+  height: 40px; }
+
+.icon-dialog {
+  background-image: url(../i/sprite.png);
+  background-position: 0px -191px;
+  width: 51px;
+  height: 50px; }
+
+.icon-earth {
+  background-image: url(../i/sprite.png);
+  background-position: -248px -191px;
+  width: 43px;
+  height: 50px; }
+
+.icon-error {
+  background-image: url(../i/sprite.png);
+  background-position: -364px -141px;
+  width: 20px;
+  height: 20px; }
+
+.icon-flag {
+  background-image: url(../i/sprite.png);
+  background-position: -47px -241px;
+  width: 43px;
+  height: 51px; }
+
+.icon-mouthpiece {
+  background-image: url(../i/sprite.png);
+  background-position: -196px -141px;
+  width: 56px;
+  height: 50px; }
+
+.icon-site {
+  background-image: url(../i/sprite.png);
+  background-position: -134px -141px;
+  width: 62px;
+  height: 50px; }
+
+.icon-statics {
+  background-image: url(../i/sprite.png);
+  background-position: -51px -191px;
+  width: 50px;
+  height: 50px; }
+
+.icon-study {
+  background-image: url(../i/sprite.png);
+  background-position: -252px -141px;
+  width: 55px;
+  height: 48px; }
+
+.icon-take {
+  background-image: url(../i/sprite.png);
+  background-position: -201px -191px;
+  width: 47px;
+  height: 50px; }
+
+.icon-web {
+  background-image: url(../i/sprite.png);
+  background-position: -72px -141px;
+  width: 62px;
+  height: 50px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+body, html {
+  height: 100%; }
+
+body {
+  font: normal 16px/1.4 MyriadPro, Arial, sans-serif; }
+
+.wrapper {
+  max-width: 980px;
+  margin: auto; }
+
+.icon {
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.hidden {
+  display: none !important; }
+
+.soft-hidden {
+  display: none; }
+
+.pull-left {
+  float: left !important; }
+
+.pull-right {
+  float: right !important; }
+
+.font-test {
+  font-family: 'MyriadPro';
+  color: #000;
+  font-size: 24px;
+  font-style: italic; }

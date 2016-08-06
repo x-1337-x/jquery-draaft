@@ -1,0 +1,27 @@
+@import './base/fonts';
+@import './abstracts/variables';
+@import './abstracts/sprite';
+@include sprites($spritesheet-sprites);
+
+
+@import './base/reset';
+@import './base/base';
+
+// @import './components/small-components';
+
+
+//@import './pages/home';
+
+
+@import './layout/header';
+
+
+
+
+
+// @import '../../../bower_components/slick-carousel/slick/slick.css';
+// @import '../../../bower_components/slick-carousel/slick/slick-theme.css';
+
+// @import '../../../bower_components/fancyBox/source/jquery.fancybox.css';
+
+// @import './vendors/slick-theme-override';
