@@ -1,0 +1,91 @@
+.l-apply {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.l-apply-header {
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 62px;
+  color: #464646;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.l-apply-header__emph {
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 52px;
+  color: #ff0000;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.l-apply-subheader {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'MyriadProCondensed';
+  font-weight: 400;
+  font-size: 38px;
+  color: #464646;
+  text-align: center;
+  padding-bottom: 15px;
+
+  span {
+    margin: 0 10px;
+  }
+}
+
+.l-apply-registration {
+  width: 410px;
+  margin: 0 auto;
+
+  p {
+    font-family: 'MyriadProCondensed';
+    font-weight: 700;
+    font-size: 26px;
+    color: #464646;
+    margin-bottom: 20px;
+  }
+}
+
+.l-apply-form-container {
+  background-color: #dadada;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.l-apply-form {
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+    -webkit-box-shadow: 0 5px 6px -6px #777;
+    -moz-box-shadow: 0 5px 6px -6px #777;
+    box-shadow: 0 5px 6px -6px #777;
+  }
+
+  input::-webkit-input-placeholder {
+    vertical-align: middle;
+    font-family: 'MyriadPro';
+    font-size: 17px;
+    color: #7f7f7f;
+  }
+}
+
+.l-apply-form-button {
+  display: block;
+  width: 100%;
+
+  a {
+    font-size: 24px;
+    padding: 25px;
+  }
+}

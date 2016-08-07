@@ -1,0 +1,150 @@
+.l-portfolio {
+  width: 100%;
+  background-image: url('../i/bg-4.jpg');
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.l-portfolio-header {
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 62px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.l-portfolio-slider {
+  position: relative;
+}
+
+.c-slider-control-left {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+}
+
+.c-slider-control-arrow-left {
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+
+  span {
+    vertical-align: middle;
+    margin-left: -5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #97c000;
+    .icon-arrow-slide-left-static {
+      @extend .icon-arrow-slide-left-active;
+    }
+  }
+}
+
+.c-slider-control-right {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+}
+
+.c-slider-control-arrow-right {
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+
+  span {
+    vertical-align: middle;
+    margin-right: -5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #97c000;
+    .icon-arrow-slide-right-static {
+      @extend .icon-arrow-slide-right-active;
+    }
+  }
+}
+
+.c-slider-slide {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.c-slider-slide-item {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-slider-slide-item-img-block {
+  display: block;
+  padding-bottom: 25px;
+}
+
+.c-slider-slide-item-pic-frame {
+  width: 200px;
+  height: 200px;
+  border: 3px dashed #cbcbcb;
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+}
+
+.c-slider-slide-item-pic {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+
+.c-slider-slide-item-title {
+  text-align: center;
+  font-family: 'MyriadProCondensed';
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+
+.c-slider-slide-item-name {
+  text-align: center;
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.c-slider-slide-item-merits {
+  li {
+    @extend .clearfix;
+    padding-bottom: 15px;
+  }
+
+  span {
+    float: left;
+  }
+
+  p {
+    font-family: 'Arial';
+    font-size: 16px;
+    color: #fff;
+    margin-left: 30px;
+  }
+}

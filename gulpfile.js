@@ -74,6 +74,8 @@ gulp.task('dev:sprite', function () {
     .pipe(spritesmith({    
       imgName: '../i/sprite.png',
       cssName: '_sprite.scss',
+      // algorithm: 'binary-tree',
+      // padding: 5,
       cssVarMap: function (sprite) {
         sprite.name = 'icon-' + sprite.name;
       }

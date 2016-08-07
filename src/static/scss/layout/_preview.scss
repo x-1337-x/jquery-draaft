@@ -1,0 +1,50 @@
+.l-preview {
+  width: 100%;
+  padding: 45px 0;
+}
+
+.l-preview-header {
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 62px;
+  color: #464646;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding-bottom: 45px;
+}
+
+.l-preview-thumbnails {
+  padding: 0 10px;
+}
+
+.l-preview-thumbnails-row {
+  width: 100%;
+
+  &:first-child {
+    margin-bottom: 70px;
+  }
+}
+
+.c-preview-thumbnail {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-preview-thumbnail-pic {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.c-preview-thumbnail-text {
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 17px;
+  color: #7f7f7f;
+  padding: 10px 0;
+}

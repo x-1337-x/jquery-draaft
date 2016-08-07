@@ -1,0 +1,48 @@
+.l-benefits {
+  width: 100%;
+  background-image: url('../i/bg-3.jpg');
+  background-size: cover;
+}
+
+.l-benefits-content {
+  padding: 20px 0;
+}
+
+.l-benefits-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+  padding: 0 45px 30px 45px;
+}
+
+.l-benefits-text {
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 17px;
+  color: #fff;
+  padding: 0 45px 50px 45px;
+}
+
+.l-benefits-list {
+  padding: 0 15px;
+  li {
+    @extend .clearfix;
+    padding-bottom: 35px;
+  }
+}
+
+.c-benefits-list-marker {
+  float: left;
+  margin-top: 5px;
+}
+
+.c-benefits-list-text {
+  margin-left: 60px;
+  display: block;
+  font-family: 'Arial';
+  font-size: 17px;
+  color: #fff;
+}
