@@ -43,3 +43,42 @@ window.onclick = function(event) {
         body.style.overflow = "visible";
     }
 }
+
+
+$(document).ready(function(){
+
+  console.log('jquery is here');
+
+  $(".owl-carousel").owlCarousel({
+      slideSpeed : 400,
+      items: 3,
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1,
+          nav:false,
+          loop:true
+        },
+        600:{
+          items:2,
+          nav:false,
+          loop:true
+        },
+        1000:{
+          items:3,
+          nav:false,
+          loop:true
+        }
+      }
+  });
+
+  owl = $('.owl-carousel').owlCarousel();
+
+  $(".c-slider-control-arrow-left").click(function () {
+      owl.trigger('prev.owl.carousel');
+  });
+
+  $(".c-slider-control-arrow-right").click(function () {
+      owl.trigger('next.owl.carousel');
+  });
+});
