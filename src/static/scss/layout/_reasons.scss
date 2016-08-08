@@ -25,6 +25,11 @@
   padding: 25px 0; 
   @extend .clearfix;
 
+  a {
+    text-decoration: underline;
+    color: #89ad00;
+  }
+
   p {
     margin-left: 80px;
     padding-top: 10px;

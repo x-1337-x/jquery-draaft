@@ -43,6 +43,7 @@
 .l-hero-boxes {
   width: 100%;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .l-hero-diagram {
@@ -63,6 +64,20 @@
 
   border: 1px solid #fff;
   border-radius: 5px;
+
+  a {
+    border-bottom: 1px dotted #e9a716;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'MyriadProCondensed';
+    font-weight: 700;
+    font-size: 36px;
+    color: #e9a716;
+  }
+
+  a:hover {
+    border-bottom: 1px dotted transparent;
+  }
 }
 
 .c-hero-diagram-divider {
@@ -126,5 +141,12 @@
 
   a {
     font-size: 26px;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .l-hero {
+    display: none;
   }
 }

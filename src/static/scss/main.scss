@@ -1,5 +1,5 @@
 @import './base/fonts';
-@import './abstracts/variables';
+//@import './abstracts/variables';
 @import './abstracts/sprite';
 @include sprites($spritesheet-sprites);
 
@@ -8,6 +8,8 @@
 @import './base/base';
 
 @import './components/small-components';
+@import './components/modals';
+@import './components/form';
 
 
 //@import './pages/home';
@@ -20,6 +22,7 @@
 @import './layout/preview';
 @import './layout/portfolio';
 @import './layout/apply';
+@import './layout/bonus';
 @import './layout/footer';
 
 

@@ -1,0 +1,85 @@
+.c-form-container {
+  background-color: #dadada;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.c-form {
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+
+  }
+
+  input::-webkit-input-placeholder {
+    vertical-align: middle;
+    font-family: 'MyriadPro';
+    font-size: 17px;
+    color: #7f7f7f;
+  }
+}
+
+.c-form-line {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+  -moz-box-shadow: 0 5px 6px -6px #777;
+  box-shadow: 0 5px 6px -6px #777;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+  }
+
+  &.c-form-line-error {
+
+  input::-webkit-input-placeholder {
+      text-transform: uppercase;
+      vertical-align: middle;
+      font-family: 'MyriadPro';
+      font-size: 17px;
+      color: #ff0000;
+    }
+  }
+
+  &.c-form-line-success:before {
+    @extend .icon-check-1;
+  }
+
+  &.c-form-line-error:before {
+    @extend .icon-error;
+  }
+}
+
+.c-form-text {
+  p {
+    text-align: center;
+    font-family: 'MyriadProCondensed';
+    font-weight: 700;
+    font-size: 24px;
+    color: #464646;
+  }
+    padding-bottom: 20px;
+}
+
+.c-form-button {
+  display: block;
+  width: 100%;
+
+  a {
+    font-size: 24px;
+    padding: 25px;
+  }
+}

@@ -10,7 +10,39 @@
 <link rel="stylesheet" href="../static/css/style.css">
 <!-- endbuild -->
 </head>
-<body>  
+<body>
+
+  <div class="l-modalRegister" id="modalRegister">
+  <div class="c-modal-box">
+    <div class="c-close-modal">
+      <span class="icon icon-close"></span>
+    </div>
+    <div class="c-form-container__modal">
+      <form action="" class="c-form" id="modalRegisterForm">
+        <div class="c-form-text"><p>Оставьте свои данные и мы свяжемся с вами и проведем бесплатную консультацию</p></div>
+        <div class="c-form-line c-form-line-success"><input type="text" placeholder="ВАШЕ ИМЯ (*обязательное поле)"></div>
+        <div class="c-form-line c-form-line-error"><input type="email" placeholder="E-MAIL (*обязательное поле)"></div>
+        <div class="c-form-line"><input type="tel" placeholder="ТЕЛЕФОН"></div>
+        <div class="c-form-button">
+          <a href="#" class="c-btn">зарегистрироваться бесплатно</a>
+        </div>
+
+        <!-- DELETE THIS, MR.PROGGER -->
+        <span id="successExample" style="cursor: pointer"><strong>Display Success</strong></span>
+        <!---->
+      </form>
+      <div class="c-form-success" id="modalRegisterSuccess">
+        <div class="c-form-button">
+          <div class="c-form-success-pic"><span class="icon icon-check-2"></span></div>
+          <div class="c-form-success-text"><p>На почту, которую вы указали отправленно письмо с доступом на ОНЛАЙН вебинар</p></div>
+          <div class="c-form-success-text__secondary"><p>Мы свяжемся с вами в ближайшее время и проконсультируем по партнерской программе sklad.com</p></div>
+          <div class="c-form-text"><p></p></div>
+          <a href="#" class="c-btn" id="modalBtnClose">закрыть окно</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class="l-header">
     <div class="wrapper clearfix">
@@ -58,16 +90,16 @@
             <div class="c-hero-diagram-divider">+</div>
             <div class="c-hero-diagram-block">умение проводить переговоры</div>
             <div class="c-hero-diagram-divider">+</div>
-            <div class="c-hero-diagram-block">ГОТОВЫЙ БИЗНЕС в интернете</div>
+            <div class="c-hero-diagram-block"><a href="#modalRegister" id="openModal">ГОТОВЫЙ БИЗНЕС в интернете</a></div>
             <div class="c-hero-diagram-divider__text">согласитесь хорошее предложение, ДА?</div>
           </div>
           
           <div class="l-hero-form-container">
             <form action="" class="l-hero-form">
               <p>Хотите узнать как зарабатывать на рекомендациях и приглашениях, не вкладывая деньги в товар?<br><span class="c-hero-text__emph">Оставляйте свой email</span> и Имя, что бы бесплатно посетить вебинар.</p>
-              <input type="text" placeholder="ВАШЕ ИМЯ (*обязательное поле)">
-              <input type="email" placeholder="E-MAIL (*обязательное поле)">
-              <input type="tel" placeholder="ТЕЛЕФОН">
+              <div class="c-form-line"><input type="text" placeholder="ВАШЕ ИМЯ (*обязательное поле)"></div>
+              <div class="c-form-line"><input type="email" placeholder="E-MAIL (*обязательное поле)"></div>
+              <div class="c-form-line"><input type="tel" placeholder="ТЕЛЕФОН"></div>
               <div class="l-hero-form-button">
                 <a href="#" class="c-btn">зарегистрироваться бесплатно</a>
               </div>
@@ -93,7 +125,7 @@
           <div class="c-reasons-list-pic">
             <span class="icon icon-champion"></span>
           </div>
-          <p>Вы будете <strong>одним из первых</strong>, кто умеет зарабатывать в интернете на рекомендациях. Данный вид заработка еще только начинает активно развиваться, поэтому, осваивать его нужно уже сейчас!</p>
+          <p>Вы будете <strong>одним из первых</strong>, кто умеет зарабатывать в интернете на рекомендациях. Данный вид заработка еще только начинает активно развиваться, поэтому, осваивать его нужно уже сейчас! <a href="#">Узнать подробнее о партнерской программе.</a></p>
         </div>
 
         <div class="l-reasons-list-item">
@@ -211,9 +243,9 @@
           </div>
         </div>
         <div class="l-preview-thumbnails-row clearfix">
-          <div class="c-preview-thumbnail">
+          <div class="c-preview-thumbnail c-preview-thumbnail__highlighted">
             <div class="c-preview-thumbnail-pic"><span class="icon icon-site"></span></div>
-            <div class="c-preview-thumbnail-text">Презентация проекта sklad.com </div>
+            <div class="c-preview-thumbnail-text"><a href="#">Презентация проекта sklad.com</a></div>
           </div>
           <div class="c-preview-thumbnail">
             <div class="c-preview-thumbnail-pic"><span class="icon icon-web"></span></div>
@@ -334,12 +366,12 @@
 
       <div class="l-apply-registration">
         <p>Заполните всего два поля и получи ссылку на онлайн-вебинар</p>
-        <div class="l-apply-form-container">
-          <form action="" class="l-apply-form">
-            <input type="text" placeholder="ВАШЕ ИМЯ (*обязательное поле)">
-            <input type="email" placeholder="E-MAIL (*обязательное поле)">
-            <input type="tel" placeholder="ТЕЛЕФОН">
-            <div class="l-apply-form-button">
+        <div class="c-form-container">
+          <form action="" class="c-form">
+            <div class="c-form-line"><input type="text" placeholder="ВАШЕ ИМЯ (*обязательное поле)"></div>
+            <div class="c-form-line"><input type="email" placeholder="E-MAIL (*обязательное поле)"></div>
+            <div class="c-form-line"><input type="tel" placeholder="ТЕЛЕФОН"></div>
+            <div class="c-form-button">
               <a href="#" class="c-btn">зарегистрироваться бесплатно</a>
             </div>
           </form>
@@ -351,6 +383,26 @@
   <div class="c-section-footer">
     <div class="wrapper">
       <p>*Если есть вопросы, оставьте телефон и мы с вами свяжемся в ближайшее время. Регистрация ни к чему вас не обязывает!</p>
+    </div>
+  </div>
+
+  <div class="l-bonus">
+    <div class="wrapper">
+      <div class="l-bonus-header">
+        бонус
+      </div>
+      <div class="l-bonus-emblem">
+        <span class="icon icon-partner"></span>
+      </div>
+      <div class="l-bonus-text">
+        Пройдя курс обучения в конце вы получите свой <span class="l-bonus-text__emph">готовый бизнес</span> на площадке <strong>sklad.com</strong>. 
+      </div>
+      <div class="l-bonus-text">
+        Ознакомиться с Партнерской программой вы можете перейдя по ссылке ниже. 
+      </div>
+      <div class="l-bonus-more">
+        <a href="#">Узнать подробнее о Партнерской программе</a>
+      </div>
     </div>
   </div>
 

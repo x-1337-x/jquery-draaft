@@ -1,0 +1,47 @@
+.l-bonus {
+  width: 100%;
+  background-image: url('../i/bg-4.jpg');
+  background-size: cover;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.l-bonus-header {
+  text-transform: uppercase;
+  font-family: 'MyriadProCondensed';
+  font-weight: 700;
+  font-size: 76px;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+.l-bonus-emblem {
+  padding-bottom: 20px;
+}
+
+.l-bonus-text {
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.l-bonus-text__emph {
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 24px;
+  color: #e9a716;
+}
+
+.l-bonus-more {
+  padding: 10px 0;
+  a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'MyriadProCondensed';
+    font-weight: 700;
+    font-size: 26px;
+    color: #97c000;
+  }
+}
