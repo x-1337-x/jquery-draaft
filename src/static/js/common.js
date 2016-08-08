@@ -1,6 +1,6 @@
 console.log('common.js says \'Hello\'.');
 
-
+var body = document.getElementsByTagName("body")[0];
 var modal = document.getElementsByClassName('l-modalRegister')[0];
 var btn = document.getElementById("openModal");
 var btnCloseModal = document.getElementById("modalBtnClose");
@@ -29,14 +29,17 @@ btnCloseModal.onclick = function() {
 
 btn.onclick = function() {
     modal.style.display = "block";
+    body.style.overflow = "hidden";
 }
 
 close.onclick = function() {
     modal.style.display = "none";
+    body.style.overflow = "visible";
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        body.style.overflow = "visible";
     }
 }

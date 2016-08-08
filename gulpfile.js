@@ -30,7 +30,7 @@ gulp.task('build:test', function() {
   return gulp.src('./src/preview/*.html')
     .pipe(useref())
     .pipe(gulpif('*.css', postcss(processors)))
-    .pipe(gulpif('*.js', uglify()))
+    //.pipe(gulpif('*.js', uglify()))
     .pipe(gulp.dest('./dist/html'));
 })
 
