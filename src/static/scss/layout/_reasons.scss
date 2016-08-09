@@ -22,12 +22,16 @@
 
 .l-reasons-list-item {
   display: block;
-  padding: 25px 0; 
+  padding: 15px 0; 
   @extend .clearfix;
 
   a {
     text-decoration: underline;
     color: #89ad00;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   p {

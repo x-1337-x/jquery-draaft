@@ -1,5 +1,3 @@
-console.log('common.js says \'Hello\'.');
-
 var body = document.getElementsByTagName("body")[0];
 var modal = document.getElementsByClassName('l-modalRegister')[0];
 var btn = document.getElementById("openModal");
@@ -25,6 +23,7 @@ showSuccess.onclick = function() {
 
 btnCloseModal.onclick = function() {
   modal.style.display = "none";
+  body.style.overflow = "visible";
 }
 
 btn.onclick = function() {
@@ -47,12 +46,30 @@ window.onclick = function(event) {
 
 $(document).ready(function(){
 
-  console.log('jquery is here');
+  $("a").on('click', function(event) {
 
-  $(".c-nav-burger").click(function() {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
+
+  $(".c-nav-burger").on('click', function() {
     $(".c-nav-burger").toggleClass("c-nav-burger__active");
     $(".l-header-navbar").toggleClass("l-header-navbar__active");
-    //$(".l-header-navbar").css("animation", "animatetup 0.4s 1");
+  });
+
+  $(".l-header-navbar-item a").on('click', function() {
+    $(".l-header-navbar").toggleClass("l-header-navbar__active");
+    $(".c-nav-burger").toggleClass("c-nav-burger__active");
   });
 
   $(".owl-carousel").owlCarousel({

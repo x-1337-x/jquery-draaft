@@ -1,56 +1,72 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
-  font-weight: 400; }
+  src: url("../fonts/MyriadPro-Bold.eot");
+  src: local("☺"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-BoldCond.eot");
+  src: local("☺"), url("../fonts/MyriadPro-BoldCond.woff") format("woff"), url("../fonts/MyriadPro-BoldCond.ttf") format("truetype"), url("../fonts/MyriadPro-BoldCond.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-BoldCondIt.eot");
+  src: local("☺"), url("../fonts/MyriadPro-BoldCondIt.woff") format("woff"), url("../fonts/MyriadPro-BoldCondIt.ttf") format("truetype"), url("../fonts/MyriadPro-BoldCondIt.svg") format("svg");
+  font-weight: 700;
+  font-style: italic; }
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-It.otf") format("opentype");
+  src: url("../fonts/MyriadPro-BoldIt.eot");
+  src: local("☺"), url("../fonts/MyriadPro-BoldIt.woff") format("woff"), url("../fonts/MyriadPro-BoldIt.ttf") format("truetype"), url("../fonts/MyriadPro-BoldIt.svg") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-Cond.eot");
+  src: local("☺"), url("../fonts/MyriadPro-Cond.woff") format("woff"), url("../fonts/MyriadPro-Cond.ttf") format("truetype"), url("../fonts/MyriadPro-Cond.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadProCondensed';
+  src: url("../fonts/MyriadPro-CondIt.eot");
+  src: local("☺"), url("../fonts/MyriadPro-CondIt.woff") format("woff"), url("../fonts/MyriadPro-CondIt.ttf") format("truetype"), url("../fonts/MyriadPro-CondIt.svg") format("svg");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-Semibold.otf") format("opentype");
-  font-weight: 500; }
+  src: url("../fonts/MyriadPro-It.eot");
+  src: local("☺"), url("../fonts/MyriadPro-It.woff") format("woff"), url("../fonts/MyriadPro-It.ttf") format("truetype"), url("../fonts/MyriadPro-It.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-SemiboldIt.otf") format("opentype");
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: local("☺"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro-Semibold.eot");
+  src: local("☺"), url("../fonts/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold.svg") format("svg");
   font-weight: 500;
-  font-style: italic; }
+  font-style: normal; }
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-Bold.otf") format("opentype");
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'MyriadPro';
-  src: url("../fonts/MyriadPro-BoldIt.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'MyriadProCondensed';
-  src: url("../fonts/MyriadPro-Cond.otf") format("opentype");
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'MyriadProCondensed';
-  src: url("../fonts/MyriadPro-CondIt.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'MyriadProCondensed';
-  src: url("../fonts/MyriadPro-BoldCond.otf") format("opentype");
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'MyriadProCondensed';
-  src: url("../fonts/MyriadPro-BoldCondIt.otf") format("opentype");
-  font-weight: 700;
+  src: url("../fonts/MyriadPro-SemiboldIt.eot");
+  src: local("☺"), url("../fonts/MyriadPro-SemiboldIt.woff") format("woff"), url("../fonts/MyriadPro-SemiboldIt.ttf") format("truetype"), url("../fonts/MyriadPro-SemiboldIt.svg") format("svg");
+  font-weight: 500;
   font-style: italic; }
 
 /*
@@ -383,7 +399,7 @@ a {
   display: inline-block;
   text-align: center;
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
   background-color: #f00;
   font-family: 'MyriadProCondensed';
   text-transform: uppercase;
@@ -395,6 +411,8 @@ a {
   -moz-box-shadow: 0 5px 6px -6px #a70101;
   box-shadow: 0 5px 6px -6px #a70101;
   border-bottom: 2px solid #a70101; }
+  .c-btn:hover {
+    background-color: #d60000; }
 
 .c-section-footer {
   width: 100%;
@@ -418,7 +436,7 @@ a {
 .l-modalRegister {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   left: 0;
   top: 0;
   width: 100%;
@@ -430,7 +448,7 @@ a {
   display: none; }
 
 .c-modal-box {
-  margin: 15% auto;
+  margin: 10% auto;
   width: 445px; }
 
 .c-close-modal {
@@ -478,6 +496,12 @@ a {
     font-weight: 400;
     font-size: 24px;
     color: #464646; }
+
+@media screen and (max-width: 990px) {
+  .c-modal-box {
+    width: 310px; }
+  .c-form-container__modal {
+    width: 310px; } }
 
 .c-form-container {
   background-color: #dadada;
@@ -535,13 +559,15 @@ a {
   width: 100%; }
   .c-form-button a {
     font-size: 24px;
-    padding: 25px; }
+    padding: 15px 25px; }
 
 .l-header {
   width: 100%;
   background-color: #fff;
   line-height: 55px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: fixed;
+  z-index: 15; }
 
 .l-header-logo {
   float: left;
@@ -562,19 +588,21 @@ a {
     display: inline-block; }
 
 .l-header-navbar-item {
-  display: inline-block;
-  padding: 20px 25px; }
+  display: inline-block; }
+  .l-header-navbar-item a {
+    padding: 20px 25px; }
   .l-header-navbar-item:hover {
     background-color: #e2e2e2; }
-    .l-header-navbar-item:hover a {
+    .l-header-navbar-item:hover span {
       border-bottom: none; }
   .l-header-navbar-item a {
     font-family: 'MyriadProCondensed';
     display: block;
     color: #7ea001;
     font-size: 20px;
-    line-height: 1;
-    border-bottom: 1px dotted #7ea001; }
+    line-height: 1; }
+    .l-header-navbar-item a span {
+      border-bottom: 1px dotted #7ea001; }
 
 .l-header-contact {
   display: inline-block;
@@ -623,65 +651,11 @@ a {
     0% {
       top: -800px;
       height: 100px; }
-    10% {
-      top: -700px;
-      height: 100px; }
-    20% {
-      top: -600px;
-      height: 300px; }
-    30% {
-      top: -500px;
-      height: 300px; }
-    40% {
-      top: -400px;
-      height: 400px; }
-    50% {
-      top: -300px;
-      height: 400px; }
-    60% {
-      top: -200px;
-      height: 400px; }
-    70% {
-      top: -150px;
-      height: 400px; }
-    80% {
-      top: -100px;
-      height: 400px; }
-    90% {
-      top: -50px;
-      height: 400px; }
     100% {
       top: 60px; } }
   @keyframes animatetup {
     0% {
       bottom: 60px; }
-    10% {
-      bottom: -50px;
-      height: 400px; }
-    20% {
-      bottom: -100px;
-      height: 400px; }
-    30% {
-      bottom: -150px;
-      height: 400px; }
-    40% {
-      bottom: -200px;
-      height: 400px; }
-    50% {
-      bottom: -300px;
-      height: 400px; }
-    60% {
-      bottom: -400px;
-      height: 400px; }
-    70% {
-      bottom: -500px;
-      height: 300px; }
-    80% {
-      bottom: -600px;
-      height: 300px; }
-    90% {
-      bottom: -700px;
-      height: 100px; }
     100% {
       bottom: -800px;
       height: 100px; } }
@@ -701,6 +675,8 @@ a {
       color: #fff;
       border: none;
       font-size: 32px; }
+      .l-header-navbar-item a span {
+        border: none; }
     .l-header-navbar-item:hover {
       background-color: #ebebeb; }
       .l-header-navbar-item:hover a {
@@ -709,7 +685,8 @@ a {
 .l-hero {
   width: 100%;
   background-image: url("../i/bg-1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 60px; }
 
 .l-hero-content {
   padding: 45px 0 30px 0; }
@@ -871,10 +848,12 @@ a {
 
 .l-reasons-list-item {
   display: block;
-  padding: 25px 0; }
+  padding: 15px 0; }
   .l-reasons-list-item a {
     text-decoration: underline;
     color: #89ad00; }
+  .l-reasons-list-item a:hover {
+    text-decoration: none; }
   .l-reasons-list-item p {
     margin-left: 80px;
     padding-top: 10px;

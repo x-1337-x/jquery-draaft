@@ -1,7 +1,7 @@
 .l-modalRegister {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   left: 0;
   top: 0;
   width: 100%;
@@ -15,7 +15,7 @@
 }
 
 .c-modal-box {
-  margin: 15% auto;
+  margin: 10% auto;
   width: 445px;
 }
 
@@ -74,4 +74,15 @@
     color: #464646;
   }
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  .c-modal-box {
+    width: 310px;
+  }
+
+  .c-form-container__modal {
+    width: 310px;
+
+  }
 }
