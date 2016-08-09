@@ -66,3 +66,22 @@
   color: #7f7f7f;
   padding: 10px 0;
 }
+
+@media screen and (max-width: 990px) {
+
+  .l-preview-header {
+    font-size: 46px;
+  }
+
+  .l-preview-thumbnails-row {
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .c-preview-thumbnail {
+    width: 100%;
+    margin-right: 0;
+    padding: 15px 0;
+  }
+}

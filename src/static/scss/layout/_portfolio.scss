@@ -17,12 +17,14 @@
 
 .l-portfolio-slider {
   position: relative;
+  margin: 0 80px;
 }
 
 .c-slider-control-left {
   position: absolute;
   top: 50%;
   left: -80px;
+  z-index: 5;
 }
 
 .c-slider-control-arrow-left {
@@ -52,6 +54,7 @@
   position: absolute;
   top: 50%;
   right: -80px;
+  z-index: 5;
 }
 
 .c-slider-control-arrow-right {
@@ -92,7 +95,7 @@
 
 .c-slider-slide-item-img-block {
   display: block;
-  padding-bottom: 25px;
+  padding: 10px 0 25px 0;
 }
 
 .c-slider-slide-item-pic-frame {
@@ -145,4 +148,22 @@
     color: #fff;
     margin-left: 30px;
   }
+}
+
+@media screen and (max-width: 990px) {
+  
+  .l-portfolio-header {
+    font-size: 46px;
+    padding-bottom: 60px;
+  }
+
+  .c-slider-control-left,
+  .c-slider-control-right {
+    display: none;
+  }
+
+  .l-portfolio-slider {
+    margin: 0;
+  }
+
 }

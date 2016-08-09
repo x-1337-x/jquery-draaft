@@ -56,3 +56,11 @@ a {
 .pull-right {
   float: right !important;
 }
+
+@media screen and (max-width: 990px) {
+
+  .wrapper {
+    width: 100%;
+    padding: 0 5px;
+  }
+}

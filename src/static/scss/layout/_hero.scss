@@ -145,8 +145,51 @@
 }
 
 
-// @media screen and (max-width: 720px) {
-//   .l-hero {
-//     display: none;
-//   }
-// }
+@media screen and (max-width: 990px) {
+  .l-hero {
+    padding-top: 60px;
+  }
+
+  .c-hero-header__small {
+    padding: 0 0 20px 0;
+  }
+
+  .c-hero-header {
+    font-size: 36px;
+  }
+
+  .c-hero-text {
+    padding: 15px 0px;
+  }
+
+  .l-hero-diagram {
+    width: 100%;
+    float: left;
+  }
+
+  .c-hero-diagram-block {
+    font-size: 22px;
+    padding: 20px 0;
+
+    a {
+      font-size: 22px;
+    }
+  }
+
+  .c-hero-diagram-divider__text {
+    line-height: inherit;
+    margin: 15px 0;
+    font-size: 20px;
+  }
+
+  .l-hero-form-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .l-hero-form-button  {
+    a {
+      font-size: 20px;
+    }
+  }
+}

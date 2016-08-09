@@ -49,6 +49,12 @@ $(document).ready(function(){
 
   console.log('jquery is here');
 
+  $(".c-nav-burger").click(function() {
+    $(".c-nav-burger").toggleClass("c-nav-burger__active");
+    $(".l-header-navbar").toggleClass("l-header-navbar__active");
+    //$(".l-header-navbar").css("animation", "animatetup 0.4s 1");
+  });
+
   $(".owl-carousel").owlCarousel({
       slideSpeed : 400,
       items: 3,
@@ -59,7 +65,7 @@ $(document).ready(function(){
           nav:false,
           loop:true
         },
-        600:{
+        720:{
           items:2,
           nav:false,
           loop:true

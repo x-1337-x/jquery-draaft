@@ -45,3 +45,9 @@
     color: #97c000;
   }
 }
+
+@media screen and (max-width: 990px) {
+  .l-bonus-header {
+    padding-bottom: 50px;
+  }
+}

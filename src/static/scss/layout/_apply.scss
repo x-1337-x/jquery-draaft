@@ -57,3 +57,28 @@
   border-radius: 5px;
   padding: 15px;
 }
+
+@media screen and (max-width: 990px) {
+  .l-apply-header {
+    font-size: 46px;
+  }
+
+  .l-apply-header__emph {
+    font-size: 42px;
+  }
+
+  .l-apply-subheader {
+    font-size: 36px;
+  }
+
+  .l-apply-registration {
+    width: 310px;
+  }
+
+  .c-form-button {
+    a {
+      font-size: 20px;
+      padding: 15px 5px;
+    }
+  }
+}

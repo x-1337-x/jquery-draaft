@@ -18,9 +18,24 @@
   }
 }
 
+.c-nav-burger {
+  display: none;
+
+    &.c-nav-burger__active {  
+    background-color: #9fca00;
+
+    span {
+      @extend .icon-close-sm;
+    }
+
+  }
+}
+
 .l-header-navbar {
-  float: left;
-  padding-left: 45px; 
+  margin-left: 200px;
+  ul {
+    display: inline-block;
+  }
 }
 
 .l-header-navbar-item {
@@ -46,7 +61,9 @@
 }
 
 .l-header-contact {
+  display: inline-block;
   float: right;
+  padding-right: 10px;
 
   span {
     display: inline-block;
@@ -58,4 +75,113 @@
     font-size: 24px;
     color: #464646;
   }
+}
+
+@media screen and (max-width: 990px) {
+
+  .l-header {
+    position: fixed;
+    z-index: 15;
+
+    .wrapper {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  .l-header-logo {
+    float: none;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .c-nav-burger {
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+  }
+
+  .l-header-navbar {
+    margin: 0;
+    text-align: center;
+    display: none;
+    
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+
+    animation: animatedown 0.2s 1;
+
+    ul {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @keyframes animatedown {
+    0%   {top: -800px; height: 100px;}
+    10%  {top: -700px; height: 100px;}
+    20%  {top: -600px; height: 300px;}
+    30%  {top: -500px; height: 300px;}
+    40%  {top: -400px; height: 400px;}
+    50%  {top: -300px; height: 400px;}
+    60%  {top: -200px; height: 400px;}
+    70%  {top: -150px; height: 400px;}
+    80%  {top: -100px; height: 400px;}
+    90%  {top: -50px; height: 400px;}
+    100% {top: 60px;}
+  }  
+
+  @keyframes animatetup {
+    0%   {bottom: 60px;}
+    10%  {bottom: -50px; height: 400px;}
+    20%  {bottom: -100px; height: 400px;}
+    30%  {bottom: -150px; height: 400px;}
+    40%  {bottom: -200px; height: 400px;}
+    50%  {bottom: -300px; height: 400px;}
+    60%  {bottom: -400px; height: 400px;}
+    70%  {bottom: -500px; height: 300px;}
+    80%  {bottom: -600px; height: 300px;}
+    90%  {bottom: -700px; height: 100px;}
+    100% {bottom: -800px; height: 100px;}
+  }
+
+  .l-header-navbar__active {
+    display: block;
+  }
+
+  .l-header-contact {
+    float: none;
+    display: block;
+    background-color: #9fca00;
+
+    a {
+      font-size: 26px;
+    }
+  }
+
+  .l-header-navbar-item {
+    display: block;
+    width: 100%;
+    background-color: #97c000;
+    a {
+      color: #fff;
+      border: none;
+      font-size: 32px;
+    }
+
+    &:hover {
+      background-color: #ebebeb;
+
+      a {
+        color: #7ea001;
+      }
+    }
+  }
+
 }

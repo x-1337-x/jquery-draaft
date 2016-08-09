@@ -100,7 +100,7 @@ The `sprites` mixin generates identical output to the CSS template
 */
 .icon-Phone {
   background-image: url(../i/sprite.png);
-  background-position: -235px -133px;
+  background-position: -183px -242px;
   width: 19px;
   height: 20px; }
 
@@ -124,25 +124,25 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-arrow-slide-left-active, .c-slider-control-arrow-left:hover .icon-arrow-slide-left-static {
   background-image: url(../i/sprite.png);
-  background-position: -308px -163px;
+  background-position: -308px -114px;
   width: 35px;
   height: 49px; }
 
 .icon-arrow-slide-left-static {
   background-image: url(../i/sprite.png);
-  background-position: -308px -212px;
+  background-position: -308px -163px;
   width: 35px;
   height: 49px; }
 
 .icon-arrow-slide-right-active, .c-slider-control-arrow-right:hover .icon-arrow-slide-right-static {
   background-image: url(../i/sprite.png);
-  background-position: -131px -133px;
+  background-position: -308px -212px;
   width: 35px;
   height: 49px; }
 
 .icon-arrow-slide-right-static {
   background-image: url(../i/sprite.png);
-  background-position: -308px -114px;
+  background-position: -131px -133px;
   width: 35px;
   height: 49px; }
 
@@ -158,6 +158,12 @@ The `sprites` mixin generates identical output to the CSS template
   width: 54px;
   height: 56px; }
 
+.icon-burger {
+  background-image: url(../i/sprite.png);
+  background-position: -267px -133px;
+  width: 30px;
+  height: 24px; }
+
 .icon-champion {
   background-image: url(../i/sprite.png);
   background-position: -54px -242px;
@@ -166,7 +172,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-check-1, .c-form-line.c-form-line-success:before {
   background-image: url(../i/sprite.png);
-  background-position: -204px -133px;
+  background-position: -236px -133px;
   width: 31px;
   height: 24px; }
 
@@ -181,6 +187,12 @@ The `sprites` mixin generates identical output to the CSS template
   background-position: -308px -261px;
   width: 46px;
   height: 36px; }
+
+.icon-close-sm, .c-nav-burger.c-nav-burger__active span {
+  background-image: url(../i/sprite.png);
+  background-position: -204px -133px;
+  width: 32px;
+  height: 32px; }
 
 .icon-close {
   background-image: url(../i/sprite.png);
@@ -362,6 +374,11 @@ a {
 .pull-right {
   float: right !important; }
 
+@media screen and (max-width: 990px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 5px; } }
+
 .c-btn {
   display: inline-block;
   text-align: center;
@@ -373,7 +390,6 @@ a {
   font-weight: 700;
   font-size: 24px;
   color: #fff;
-  line-height: 0;
   border-radius: 3px;
   -webkit-box-shadow: 0 5px 6px -6px #a70101;
   -moz-box-shadow: 0 5px 6px -6px #a70101;
@@ -392,6 +408,12 @@ a {
 .c-section-divider {
   width: 100%;
   border: 5px solid  #dbdbdb; }
+
+@media screen and (max-width: 990px) {
+  .c-btn {
+    padding: 20px 0; }
+  .c-section-footer {
+    padding: 10px; } }
 
 .l-modalRegister {
   display: none;
@@ -529,9 +551,15 @@ a {
   .l-header-logo span {
     vertical-align: middle; }
 
+.c-nav-burger {
+  display: none; }
+  .c-nav-burger.c-nav-burger__active {
+    background-color: #9fca00; }
+
 .l-header-navbar {
-  float: left;
-  padding-left: 45px; }
+  margin-left: 200px; }
+  .l-header-navbar ul {
+    display: inline-block; }
 
 .l-header-navbar-item {
   display: inline-block;
@@ -549,7 +577,9 @@ a {
     border-bottom: 1px dotted #7ea001; }
 
 .l-header-contact {
-  float: right; }
+  display: inline-block;
+  float: right;
+  padding-right: 10px; }
   .l-header-contact span {
     display: inline-block; }
   .l-header-contact a {
@@ -557,6 +587,124 @@ a {
     font-family: 'MyriadProCondensed';
     font-size: 24px;
     color: #464646; }
+
+@media screen and (max-width: 990px) {
+  .l-header {
+    position: fixed;
+    z-index: 15; }
+    .l-header .wrapper {
+      width: 100%;
+      padding: 0; }
+  .l-header-logo {
+    float: none;
+    position: relative;
+    margin-left: 10px; }
+  .c-nav-burger {
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0; }
+  .l-header-navbar {
+    margin: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    animation: animatedown 0.2s 1; }
+    .l-header-navbar ul {
+      display: block;
+      width: 100%; }
+  @keyframes animatedown {
+    0% {
+      top: -800px;
+      height: 100px; }
+    10% {
+      top: -700px;
+      height: 100px; }
+    20% {
+      top: -600px;
+      height: 300px; }
+    30% {
+      top: -500px;
+      height: 300px; }
+    40% {
+      top: -400px;
+      height: 400px; }
+    50% {
+      top: -300px;
+      height: 400px; }
+    60% {
+      top: -200px;
+      height: 400px; }
+    70% {
+      top: -150px;
+      height: 400px; }
+    80% {
+      top: -100px;
+      height: 400px; }
+    90% {
+      top: -50px;
+      height: 400px; }
+    100% {
+      top: 60px; } }
+  @keyframes animatetup {
+    0% {
+      bottom: 60px; }
+    10% {
+      bottom: -50px;
+      height: 400px; }
+    20% {
+      bottom: -100px;
+      height: 400px; }
+    30% {
+      bottom: -150px;
+      height: 400px; }
+    40% {
+      bottom: -200px;
+      height: 400px; }
+    50% {
+      bottom: -300px;
+      height: 400px; }
+    60% {
+      bottom: -400px;
+      height: 400px; }
+    70% {
+      bottom: -500px;
+      height: 300px; }
+    80% {
+      bottom: -600px;
+      height: 300px; }
+    90% {
+      bottom: -700px;
+      height: 100px; }
+    100% {
+      bottom: -800px;
+      height: 100px; } }
+  .l-header-navbar__active {
+    display: block; }
+  .l-header-contact {
+    float: none;
+    display: block;
+    background-color: #9fca00; }
+    .l-header-contact a {
+      font-size: 26px; }
+  .l-header-navbar-item {
+    display: block;
+    width: 100%;
+    background-color: #97c000; }
+    .l-header-navbar-item a {
+      color: #fff;
+      border: none;
+      font-size: 32px; }
+    .l-header-navbar-item:hover {
+      background-color: #ebebeb; }
+      .l-header-navbar-item:hover a {
+        color: #7ea001; } }
 
 .l-hero {
   width: 100%;
@@ -677,6 +825,33 @@ a {
   .l-hero-form-button a {
     font-size: 26px; }
 
+@media screen and (max-width: 990px) {
+  .l-hero {
+    padding-top: 60px; }
+  .c-hero-header__small {
+    padding: 0 0 20px 0; }
+  .c-hero-header {
+    font-size: 36px; }
+  .c-hero-text {
+    padding: 15px 0px; }
+  .l-hero-diagram {
+    width: 100%;
+    float: left; }
+  .c-hero-diagram-block {
+    font-size: 22px;
+    padding: 20px 0; }
+    .c-hero-diagram-block a {
+      font-size: 22px; }
+  .c-hero-diagram-divider__text {
+    line-height: inherit;
+    margin: 15px 0;
+    font-size: 20px; }
+  .l-hero-form-container {
+    width: 100%;
+    text-align: center; }
+  .l-hero-form-button a {
+    font-size: 20px; } }
+
 .l-reasons {
   width: 100%;
   padding-bottom: 50px; }
@@ -724,6 +899,18 @@ a {
   text-align: center;
   width: 350px; }
 
+@media screen and (max-width: 990px) {
+  .l-reasons-header {
+    font-size: 44px; }
+    .l-reasons-header::first-letter {
+      font-size: 54px; }
+  .l-reasons-button {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px; }
+    .l-reasons-button a {
+      font-size: 22px; } }
+
 .l-benefits {
   width: 100%;
   background-image: url("../i/bg-3.jpg");
@@ -763,6 +950,15 @@ a {
   font-family: 'Arial';
   font-size: 17px;
   color: #fff; }
+
+@media screen and (max-width: 990px) {
+  .l-benefits-header {
+    font-size: 40px;
+    padding: 0 0 30px 0; }
+  .l-benefits-text {
+    padding: 0 0 40px 0; }
+  .l-benefits-list {
+    padding: 0; } }
 
 .l-preview {
   width: 100%;
@@ -816,6 +1012,16 @@ a {
   color: #7f7f7f;
   padding: 10px 0; }
 
+@media screen and (max-width: 990px) {
+  .l-preview-header {
+    font-size: 46px; }
+  .l-preview-thumbnails-row:first-child {
+    margin-bottom: 0; }
+  .c-preview-thumbnail {
+    width: 100%;
+    margin-right: 0;
+    padding: 15px 0; } }
+
 .l-portfolio {
   width: 100%;
   background-image: url("../i/bg-4.jpg");
@@ -832,12 +1038,14 @@ a {
   padding-bottom: 100px; }
 
 .l-portfolio-slider {
-  position: relative; }
+  position: relative;
+  margin: 0 80px; }
 
 .c-slider-control-left {
   position: absolute;
   top: 50%;
-  left: -80px; }
+  left: -80px;
+  z-index: 5; }
 
 .c-slider-control-arrow-left {
   display: block;
@@ -857,7 +1065,8 @@ a {
 .c-slider-control-right {
   position: absolute;
   top: 50%;
-  right: -80px; }
+  right: -80px;
+  z-index: 5; }
 
 .c-slider-control-arrow-right {
   display: block;
@@ -885,7 +1094,7 @@ a {
 
 .c-slider-slide-item-img-block {
   display: block;
-  padding-bottom: 25px; }
+  padding: 10px 0 25px 0; }
 
 .c-slider-slide-item-pic-frame {
   width: 200px;
@@ -928,6 +1137,16 @@ a {
   font-size: 16px;
   color: #fff;
   margin-left: 30px; }
+
+@media screen and (max-width: 990px) {
+  .l-portfolio-header {
+    font-size: 46px;
+    padding-bottom: 60px; }
+  .c-slider-control-left,
+  .c-slider-control-right {
+    display: none; }
+  .l-portfolio-slider {
+    margin: 0; } }
 
 .l-apply {
   width: 100%;
@@ -979,6 +1198,19 @@ a {
   border-radius: 5px;
   padding: 15px; }
 
+@media screen and (max-width: 990px) {
+  .l-apply-header {
+    font-size: 46px; }
+  .l-apply-header__emph {
+    font-size: 42px; }
+  .l-apply-subheader {
+    font-size: 36px; }
+  .l-apply-registration {
+    width: 310px; }
+  .c-form-button a {
+    font-size: 20px;
+    padding: 15px 5px; } }
+
 .l-bonus {
   width: 100%;
   background-image: url("../i/bg-4.jpg");
@@ -1019,6 +1251,10 @@ a {
     font-weight: 700;
     font-size: 26px;
     color: #97c000; }
+
+@media screen and (max-width: 990px) {
+  .l-bonus-header {
+    padding-bottom: 50px; } }
 
 .l-footer {
   width: 100%;

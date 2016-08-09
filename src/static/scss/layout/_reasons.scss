@@ -60,3 +60,24 @@
   text-align: center;
   width: 350px;
 }
+
+@media screen and (max-width: 990px) {
+
+  .l-reasons-header {
+    font-size: 44px;
+
+    &::first-letter {
+      font-size: 54px;
+    }
+  }
+
+  .l-reasons-button {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+
+    a {
+      font-size: 22px;
+    }
+  }
+}
