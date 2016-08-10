@@ -55,7 +55,6 @@ $(document).ready(function(){
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top - 50 <= scrollPos && refElement.position().top - 50 + refElement.height() > scrollPos) {
             $('.l-header-navbar-item').removeClass("l-header-navbar-item__active");
-            console.log(currLink.parent());
             currLink.parent().addClass("l-header-navbar-item__active");
         }
         else{
