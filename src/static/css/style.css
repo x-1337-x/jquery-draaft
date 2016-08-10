@@ -538,12 +538,16 @@ a {
     content: '';
     width: 20px;
     height: 20px; }
-  .c-form-line.c-form-line-error input::-webkit-input-placeholder {
-    text-transform: uppercase;
-    vertical-align: middle;
-    font-family: 'MyriadPro';
-    font-size: 17px;
-    color: #ff0000; }
+  .c-form-line.c-form-line-error {
+    border: 2px solid #f00; }
+    .c-form-line.c-form-line-error input::-webkit-input-placeholder {
+      text-transform: uppercase;
+      vertical-align: middle;
+      font-family: 'MyriadPro';
+      font-size: 17px;
+      color: #ff0000; }
+  .c-form-line.c-form-line-success {
+    border: 2px solid #97c000; }
 
 .c-form-text {
   padding-bottom: 20px; }
@@ -589,13 +593,12 @@ a {
 
 .l-header-navbar-item {
   display: inline-block; }
-  .l-header-navbar-item a {
-    padding: 20px 25px; }
   .l-header-navbar-item:hover {
     background-color: #e2e2e2; }
     .l-header-navbar-item:hover span {
       border-bottom: none; }
   .l-header-navbar-item a {
+    padding: 20px 25px;
     font-family: 'MyriadProCondensed';
     display: block;
     color: #7ea001;
@@ -603,6 +606,11 @@ a {
     line-height: 1; }
     .l-header-navbar-item a span {
       border-bottom: 1px dotted #7ea001; }
+
+.l-header-navbar-item__active {
+  background-color: #e2e2e2; }
+  .l-header-navbar-item__active a span {
+    border-bottom: none; }
 
 .l-header-contact {
   display: inline-block;
@@ -853,7 +861,8 @@ a {
     text-decoration: underline;
     color: #89ad00; }
   .l-reasons-list-item a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #b2ed00; }
   .l-reasons-list-item p {
     margin-left: 80px;
     padding-top: 10px;
@@ -1230,6 +1239,9 @@ a {
     font-weight: 700;
     font-size: 26px;
     color: #97c000; }
+  .l-bonus-more a:hover {
+    text-decoration: none;
+    color: #b2ed00; }
 
 @media screen and (max-width: 990px) {
   .l-bonus-header {

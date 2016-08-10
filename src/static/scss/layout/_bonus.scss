@@ -44,6 +44,11 @@
     font-size: 26px;
     color: #97c000;
   }
+
+  a:hover {
+    text-decoration: none;
+    color: #b2ed00;
+  }
 }
 
 @media screen and (max-width: 990px) {

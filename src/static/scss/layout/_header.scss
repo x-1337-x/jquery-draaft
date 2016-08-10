@@ -43,10 +43,6 @@
 .l-header-navbar-item {
   display: inline-block;
 
-  a {
-    padding: 20px 25px;
-  }
-
   &:hover {
     background-color: #e2e2e2;
 
@@ -56,6 +52,7 @@
   }
 
   a {
+    padding: 20px 25px;
     font-family: 'MyriadProCondensed';
     display: block;
     color: #7ea001;
@@ -66,6 +63,14 @@
       border-bottom: 1px dotted #7ea001;
     }
   }
+}
+
+.l-header-navbar-item__active {
+  background-color: #e2e2e2;
+
+  a span {
+      border-bottom: none;
+    }
 }
 
 .l-header-contact {
